@@ -11,7 +11,7 @@
         "src": "/(.*)",
         "dest": "web/$1"
       }
-    ]
+    ],
     "git": {
         "deploymentEnabled": false
     }
