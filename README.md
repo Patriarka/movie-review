@@ -63,7 +63,7 @@ Por fim, execute o projeto.
 	<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/53534886?v=4" width="100px;" alt=""/>
 <br />
 	<b>Matheus Patriarca</b></a> 
-<br />
+<br /> 
 	RA: 2171481
 
 <td align="center"><a href="https://github.com/gustavofavaro">
