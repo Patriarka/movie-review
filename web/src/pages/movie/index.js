@@ -32,26 +32,26 @@ const Movie = () => {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=pt-BR`);
+            const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=91e9bea62105d3ed0765acbbd25020bd&language=pt-BR`);
             setMovie(response.data);
 
-            const creditsResponse = await axios.get(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
+            const creditsResponse = await axios.get(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=91e9bea62105d3ed0765acbbd25020bd`);
             const crew = creditsResponse.data.crew;
             const director = crew.find(member => member.job === 'Director');
 
             setDirector(director ? director.name : '');
 
-            const providersResponse = await axios.get(`https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
+            const providersResponse = await axios.get(`https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=91e9bea62105d3ed0765acbbd25020bd`);
             const brProviders = providersResponse.data.results.BR;
             setStreamingProviders(brProviders?.flatrate || []);
 
-            const castResponse = await axios.get(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.REACT_APP_TMDB_API_KEY}`);
+            const castResponse = await axios.get(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=91e9bea62105d3ed0765acbbd25020bd`);
             setCast(castResponse.data.cast);
 
-            const videoTrailer = await axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=pt-BR`);
+            const videoTrailer = await axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=91e9bea62105d3ed0765acbbd25020bd&language=pt-BR`);
             setTrailer(videoTrailer.data);
 
-            const videoTrailerUS = await axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US`);
+            const videoTrailerUS = await axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=91e9bea62105d3ed0765acbbd25020bd&language=en-US`);
             setTrailerUS(videoTrailerUS.data);
         }
         fetchData();

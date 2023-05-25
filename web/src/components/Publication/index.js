@@ -36,7 +36,7 @@ const Publication = () => {
 
             const response = await axios.get(url, {
                 params: {
-                    api_key: process.env.REACT_APP_TMDB_API_KEY,
+                    api_key: '91e9bea62105d3ed0765acbbd25020bd',
                     query,
                     language: 'pt-BR',
                 },

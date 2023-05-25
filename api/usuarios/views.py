@@ -25,12 +25,8 @@ from imgurpython import ImgurClient
 
 import os
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
-client_id = os.environ.get('IMGUR_CLIENT_ID')
-client_secret = os.environ.get('IMGUR_CLIENT_SECRET')
+client_id = 'f16556a543b91b9'
+client_secret = 'd7ea2c62ff008947fd20caec7c1cf6ddaa0b73db'
 
 class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer

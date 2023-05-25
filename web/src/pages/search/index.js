@@ -91,7 +91,7 @@ const Search = () => {
 
         if (isFilterWork) {
           response = await axios.get(
-            `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=pt-BR&with_genres=${genres}&with_text_query=${query}&year=${year}&sort_by=${sortby}&page=${currentPage}`
+            `https://api.themoviedb.org/3/discover/movie?api_key=91e9bea62105d3ed0765acbbd25020bd&language=pt-BR&with_genres=${genres}&with_text_query=${query}&year=${year}&sort_by=${sortby}&page=${currentPage}`
           );
         } else {
           if (query !== beforeQuery) {
@@ -99,7 +99,7 @@ const Search = () => {
           }
 
           response = await axios.get(
-            `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&query=${query}&page=${currentPage}&language=pt-BR`
+            `https://api.themoviedb.org/3/search/movie?api_key=91e9bea62105d3ed0765acbbd25020bd&query=${query}&page=${currentPage}&language=pt-BR`
           );
         }
 
@@ -131,7 +131,7 @@ const Search = () => {
 
     async function fetchData() {
       const response = await axios.get(
-        `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=pt-BR&with_genres=${genres}&with_text_query=${query}&year=${year}&sort_by=${sortBy}&page=${currentPage}`
+        `https://api.themoviedb.org/3/discover/movie?api_key=91e9bea62105d3ed0765acbbd25020bd&language=pt-BR&with_genres=${genres}&with_text_query=${query}&year=${year}&sort_by=${sortBy}&page=${currentPage}`
       );
 
       setMovies(response.data.results);

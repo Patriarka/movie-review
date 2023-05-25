@@ -25,7 +25,7 @@ const ViewPublication = ({ userID, idPost, idMovie, rating, critic, image, date,
                 "Content-type": "application/json"
             };
 
-            const response = await axios.get(`https://api.themoviedb.org/3/movie/${idMovie}?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=pt-BR`);
+            const response = await axios.get(`https://api.themoviedb.org/3/movie/${idMovie}?api_key=91e9bea62105d3ed0765acbbd25020bd&language=pt-BR`);
             setMovie(response.data);
 
             const response_user = await api.get(`usuarios/${userID}/`, { headers })
