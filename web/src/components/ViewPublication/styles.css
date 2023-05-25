@@ -154,6 +154,10 @@
     width: 69%;
 }
 
+.review-full{
+    word-break: break-all;
+}
+
 .movie-options {
     position: absolute;
     z-index: 10000;
@@ -295,6 +299,139 @@ select {
     animation: spin 2s linear infinite;
 }
 
+.movie-indice{
+    display: flex;
+    font-size: 14px;
+    padding: 8px;
+    padding-bottom: 15px;
+}
+
+.movie-insert{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.movie-insert:hover{
+    color: #ff0381;
+    transition: 0.2s;
+}
+
+.critic-review-preview{
+    display: block;
+}
+
+.critic-review{
+    display: block;
+}
+
+.read-more{
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+    transition: 0.2s;
+}
+
+.read-more:hover{
+    color: #ff0381;
+    transition: 0.2s;
+}
+
+.arrow-display{
+    padding-left: 5px;
+    margin-bottom: -3px;
+}
+
+.user-indice{
+    display: flex;
+}
+
+.user-insert{
+    padding-left: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.user-insert:hover{
+    color: #ff0381;
+    transition: 0.2s;
+}
+
+.date-release{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.562);
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+
+.image-review{
+    padding-top: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.rating-content{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    float: left;
+}
+
+.star-critic{
+    font-size: 24px;
+    display: flex;
+}
+
+div .pub-star{
+    color: #ff0381b5;
+}
+
+div .no-star{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.rating-text{
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+}
+
+.rating-text:hover{
+    color: #ff0381b5;
+}
+
+.del-publication{
+    border-radius: 100%;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 43%;
+    padding: 3px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.del-publication:hover{
+    background-color: #494949;
+    transition: 0.2s;
+}
+
+.options-publication-inside{
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.options-publication-inside:hover{
+    background-color: #ff0381b5;
+    transition: 0.1s;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -316,6 +453,24 @@ select {
     justify-content: center;
     align-items: center;
     z-index: 100;
+}
+
+@media only screen and (max-width: 680px) {
+    .image-review{
+        margin-left: -35px;
+    }
+    .review-full{
+        margin-left: -65px;
+    }
+    .del-publication{
+        border-radius: 100%;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 90%;
+        padding: 3px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
 }
 
 @media only screen and (max-width: 768px) {
